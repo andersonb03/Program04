@@ -1,10 +1,14 @@
-public class EmmausHamburger extends sandwich {
+public class EmmausHamburger extends Sandwich {
+    SandwichIngredientFactory ingredientFactory;
     
-    public Bread createBread() {
-        return new Bun();
+    public EmmausHamburger(SandwichIngredientFactory ingredientFactory) {
+        this.ingredientFactory = ingredientFactory;
     }
     
-    public void makeSandwich(){
-	wrap = SandwichIngredientFactory.
+    void makeSandwich() {
+        System.out.println("Preparing sandwich " + name);
+        bread = ingredientFactory.createBread();
+        topping = ingredientFactory.createTopping();
+        condiment = ingredientFactory.createCondiment();
     }
 }
