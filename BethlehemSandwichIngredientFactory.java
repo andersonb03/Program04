@@ -1,4 +1,4 @@
-"public class BethlehemSandwichIngredientFactory implements SandwichIngredientFactory {
+public class BethlehemSandwichIngredientFactory implements SandwichIngredientFactory {
     
     public Bread createBread() {
 	if(item.equals("hamburger"))
@@ -10,24 +10,27 @@
     }
     
     public Topping[] createTopping() {
+        Topping[] toppings;
         //Topping toppings[] = { new Sprouts(), new Lettuce(), new Cheese(), new Tomato(), new Onion() };
 
         if(item.equals("hamburger"))
-            Topping toppings[] = {new Onion()};
+            toppings = new Topping[] {new Onion()};
         else if(item.equals("ham"))
-            Topping toppings[] = {new Lettuce(), new Tomato()};
+            toppings = new Topping[] {new Lettuce(), new Tomato()};
         else if(item.equals("chicken"))
-            Topping toppings[] = {new Cheese(), new Lettuce(), new Tomato()};
+            toppings = new Topping[] {new Cheese(), new Lettuce(), new Tomato()};
         return toppings;
     }
     
     public Condiment[] createCondiment() {
+        Condiment[] condiments;
+        
         if(item.equals("hamburger"))
-            Condiment condiments[] = {new Mustard(), new Ketchup() };
+            condiments = new Condiment[] {new Mustard(), new Ketchup() };
         else if(item.equals("ham"))
-            Condiment condiments[] = {new Mayonnaise()};
+            condiments = new Condiment[] {new Mayonnaise()};
         else if(item.equals("chicken"))
-            Condiment condiments[] = {new Mustard()};
+            condiments = new Condiment[] {new Mustard()};
         return condiments;
     }
 }

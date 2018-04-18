@@ -5,12 +5,7 @@ public abstract class Sandwich {
     Topping toppings[];
     Condiment condiments[];
     
-    void makeSandwich() {
-        addIngredient(Sandwich s = new sandwich();
-        addIngredient(s, Ingredient.bread);
-        addIngredient(s, Ingredient.cheese);
-        return s;
-    }
+    abstract void makeSandwich();
     
     void setName(String name) {
         this.name = name;
@@ -29,7 +24,7 @@ public abstract class Sandwich {
         }
         if (toppings != null) {
             for (int i = 0; i < toppings.length; i++) {
-                result.append(veggies[i]);
+                result.append(toppings[i]);
                 if (i < toppings.length-1) {
                     result.append(", ");
                 }

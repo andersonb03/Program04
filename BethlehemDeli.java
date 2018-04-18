@@ -1,7 +1,7 @@
 public class BethlehemDeli extends SchaperDeli {
     
     protected Sandwich createSandwich(String item) {
-        Sanchwich sandwich = null;
+        Sandwich sandwich = null;
         SandwichIngredientFactory ingredientFactory =
         new BethlehemSandwichIngredientFactory();
         
