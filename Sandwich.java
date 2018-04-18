@@ -5,21 +5,12 @@ public abstract class Sandwich {
     Topping toppings[];
     Condiment condiments[];
     
-    Sandwich(List<IngredientType> ingredients, int priceInCents) {
-        this.ingredients = ingredients;
-        this.priceInCents = priceInCents;
-    }
-    
     void makeSandwich() {
         addIngredient(Sandwich s = new sandwich();
         addIngredient(s, Ingredient.bread);
         addIngredient(s, Ingredient.cheese);
         return s;
-        }
-                      
-    void addIngredient(Sandwich s, IngredientType i) {
-            
-        }
+    }
     
     void setName(String name) {
         this.name = name;

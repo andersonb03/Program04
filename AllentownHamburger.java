@@ -1,11 +1,15 @@
  
 public class AllentownHamburger extends Sandwich {
-    
-    public AllentownHamburger(Sandwich s, List<IngredientType> ingredient) {
-        
+    SandwichIngredientFactory ingredientFactory;
+
+    public AllentownHamburger(SandwichIngredientFactory ingredientFactory) {
+	this.ingredientFactory = ingredientFactory;
     }
     
-    void prepare() {
-        System.out.println("Preparing " + name);
+    void makeSandwich() {
+        System.out.println(“Making " + name);
+	bread = ingredientFactory.createBread();
+	topping = ingredientFactory.createTopping();
+	condiment = ingredientFactory.createCondiment();
     }
 }

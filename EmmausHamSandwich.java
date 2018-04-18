@@ -1,23 +1,16 @@
 import java.util.*;
 
 public class EmmausHamSandwich extends Sandwich {
-    List<IngredientType> ingredient;
+    SandwichIngredientFactory ingredientFactory;
 
-    public void EmmausHamSandwich(IngredientType ingredient){
-        this.ingredient = ingredient;
+    public EmmausHamSandwich(SandwichIngredientFactory ingredientFactory) {
+	this.ingredientFactory = ingredientFactory;
     }
     
-    public void makeSandwich(Sandwich s){
-        switch(ingredient){
-            case BUN:
-                s.addIngredient(BUN);
-                break;
-            case CHEESE:
-                s.addIngredient(CHEESE);
-                break;
-            case MUSTARD:
-                s.addIngredient(MUSTARD);
-                break;
-        }
+    void makeSandwich() {
+        System.out.println(“Making " + name);
+	bread = ingredientFactory.createBread();
+	topping = ingredientFactory.createTopping();
+	condiment = ingredientFactory.createCondiment();
     }
 }

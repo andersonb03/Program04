@@ -1,31 +1,26 @@
-public class EmmausSandwichIngredientFactory implements SandwichIngredientFactory {
+public class AllentownSandwichIngredientFactory implements SandwichIngredientFactory {
     
     public Bread createBread() {
-	if(item.equals("hamburger"))
-            return new WheatWrap();
-        else if(item.equals("ham"))
-            return new Bun();
-        else if(item.equals("chicken"))
-            return new WheatWrap();
+        return new Bun();
     }
     
     public Topping[] createTopping() {
         //Topping toppings[] = { new Sprouts(), new Lettuce(), new Cheese(), new Tomato(), new Onion() };
 
         if(item.equals("hamburger"))
-            Topping toppings[] = {new Onion(), new Lettuce()};
+            Topping toppings[] = {new Lettuce(), new Cheese(), new Tomato()};
         else if(item.equals("ham"))
-            Topping toppings[] = {new Cheese()};
+            Topping toppings[] = {new Cheese(), new Tomato(), new Onion()};
         else if(item.equals("chicken"))
-            Topping toppings[] = {new Onion(), new Lettuce(), new Tomato()};
+            Topping toppings[] = {new Lettuce()};
         return toppings;
     }
     
     public Condiment[] createCondiment() {
         if(item.equals("hamburger"))
-            Condiment condiments[] = {new Mustard()};
+            Condiment condiments[] = {new Mayonnaise()};
         else if(item.equals("ham"))
-            Condiment condiments[] = {new Mustard()};
+            Condiment condiments[] = {};
         else if(item.equals("chicken"))
             Condiment condiments[] = {new Mayonnaise()};
         return condiments;
