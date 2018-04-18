@@ -1,4 +1,9 @@
 public class BethlehemSandwichIngredientFactory implements SandwichIngredientFactory {
+    String item;
+
+    public BethlehemSandwichIngredientFactory(String item){
+        this.item = item;
+    }
     
     public Bread createBread() {
 	if(item.equals("hamburger"))

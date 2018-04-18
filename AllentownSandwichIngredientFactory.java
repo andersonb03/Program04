@@ -1,4 +1,9 @@
 public class AllentownSandwichIngredientFactory implements SandwichIngredientFactory {
+    String item;
+
+    public AllentownSandwichIngredientFactory(String item){
+        this.item = item;
+    }
     
     public Bread createBread() {
         return new Bun();
