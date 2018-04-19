@@ -7,7 +7,7 @@ public class EmmausDeli extends SchaperDeli {
         
         if (item.equals("hamburger")) {
             
-            sandwich = new EmmausHamburgerSandwich(ingredientFactory);
+            sandwich = new EmmausHamburger(ingredientFactory);
             sandwich.setName("Emmaus Style Hamburger");
             
         } else if (item.equals("ham")) {
