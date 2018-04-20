@@ -6,7 +6,13 @@ public class AllentownSandwichIngredientFactory implements SandwichIngredientFac
     }
     
     public Bread createBread() {
-        if(item.equals("nischalspecial"))
+        if(item.equals("hamburger"))
+            return new Bun();
+        else if(item.equals("ham"))
+            return new Bun();
+        else if(item.equals("chicken"))
+            return new Bun();
+        else if(item.equals("nischalspecial"))
             return new Bun();
         return null;
     }

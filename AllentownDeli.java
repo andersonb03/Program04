@@ -20,6 +20,10 @@ public class AllentownDeli extends SchaperDeli {
             sandwich = new AllentownChickenSandwich(ingredientFactory);
             sandwich.setName("Allentown Style Chicken Sandwich");
             
+        } else if (item.equals("nischalspecial")) {
+            
+            sandwich = new AllentownNischalSpecial(ingredientFactory);
+            sandwich.setName("Allentown Nischal Special");
         }
         return sandwich;
     }

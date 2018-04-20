@@ -23,13 +23,8 @@ public class Main {
         //Custom sandwiches
         Sandwich andersonSandwich = bDeli.orderSandwich("andersonspecial");
         Sandwich fauxSandwich = bDeli.orderSandwich("fauxspecial");
-<<<<<<< HEAD
+        Sandwich mccoolSandwich = bDeli.orderSandwich("mccoolspecial");
         Sandwich nischalSandwich = aDeli.orderSandwich("nischalspecial");
 
-        System.out.println("Dr. Schaper ordered a: \n" + sandwich1 + "$" + sandwich1.getCost() + "\n" + sandwich2 + "$" + sandwich2.getCost() + "\n" + sandwich3 + "$" + sandwich3.getCost() + "\n" + sandwich4 + "$" + sandwich4.getCost() + "\n" + sandwich5 + "$" + sandwich5.getCost() + "\n" + sandwich6 + "$" + sandwich6.getCost() + "\n" + sandwich7 + "$" + sandwich7.getCost() + "\n" + sandwich8 + "$" + sandwich8.getCost() + "\n" + sandwich9 + "$" + sandwich9.getCost() + "\n" + andersonSandwich + "$" + andersonSandwich.getCost() + "\n" + fauxSandwich + "$" + fauxSandwich.getCost()+"\n"+nischalSandwich+"$"+nischalSandwich.getCost());}
-=======
-        Sandwich mccoolSandwich = bDeli.orderSandwich("mccoolspecial");
-
-        System.out.println("Dr. Schaper ordered a: \n" + sandwich1 + "$" + sandwich1.getCost() + "\n" + sandwich2 + "$" + sandwich2.getCost() + "\n" + sandwich3 + "$" + sandwich3.getCost() + "\n" + sandwich4 + "$" + sandwich4.getCost() + "\n" + sandwich5 + "$" + sandwich5.getCost() + "\n" + sandwich6 + "$" + sandwich6.getCost() + "\n" + sandwich7 + "$" + sandwich7.getCost() + "\n" + sandwich8 + "$" + sandwich8.getCost() + "\n" + sandwich9 + "$" + sandwich9.getCost() + "\n" + andersonSandwich + "$" + andersonSandwich.getCost() + "\n" + fauxSandwich + "$" + fauxSandwich.getCost() + "\n" + mccoolSandwich + "S" + mccoolSandwich.getCost();}
->>>>>>> f18e3cb50b7623d1edae0ce0f7cdc8625f76b2d3
+        System.out.println("Dr. Schaper ordered a: \n" + sandwich1 + "$" + sandwich1.getCost() + "\n" + sandwich2 + "$" + sandwich2.getCost() + "\n" + sandwich3 + "$" + sandwich3.getCost() + "\n" + sandwich4 + "$" + sandwich4.getCost() + "\n" + sandwich5 + "$" + sandwich5.getCost() + "\n" + sandwich6 + "$" + sandwich6.getCost() + "\n" + sandwich7 + "$" + sandwich7.getCost() + "\n" + sandwich8 + "$" + sandwich8.getCost() + "\n" + sandwich9 + "$" + sandwich9.getCost() + "\n" + andersonSandwich + "$" + andersonSandwich.getCost() + "\n" + fauxSandwich + "$" + fauxSandwich.getCost()+"\n" + mccoolSandwich + "$" + mccoolSandwich.getCost() + "\n" + nischalSandwich + "$" + nischalSandwich.getCost());}
 }
