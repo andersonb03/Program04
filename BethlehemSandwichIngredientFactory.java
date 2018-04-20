@@ -14,6 +14,8 @@ public class BethlehemSandwichIngredientFactory implements SandwichIngredientFac
             return new WheatWrap();
         else if(item.equals("andersonspecial"))
             return new Bun();
+        else if(item.equals("fauxspecial"))
+            return new WheatWrap();
         return null;
     }
     
@@ -29,6 +31,8 @@ public class BethlehemSandwichIngredientFactory implements SandwichIngredientFac
             toppings = new Topping[] {new Cheese(), new Lettuce(), new Tomato()};
         else if(item.equals("andersonspecial"))
             toppings = new Topping[] {new Cheese(), new Lettuce(), new Tomato(), new Onion(), new Sprouts()};
+        else if(item.equals("fauxspecial"))
+            toppings = new Topping[] {new Sprouts()};
         return toppings;
     }
     
@@ -43,6 +47,8 @@ public class BethlehemSandwichIngredientFactory implements SandwichIngredientFac
             condiments = new Condiment[] {new Mustard()};
         else if(item.equals("andersonspecial"))
             condiments = new Condiment[] {new Mustard(), new Mayonnaise(), new Ketchup()};
+        else if(item.equals("fauxspecial"))
+            condiments = new Condiment[] {new Mustard()};
         return condiments;
     }
 }

@@ -24,6 +24,11 @@ public class BethlehemDeli extends SchaperDeli {
             
             sandwich = new BethlehemAndersonSpecial(ingredientFactory);
             sandwich.setName("Bethlehem Style Anderson Special");
+
+        } else if (item.equals("fauxspecial")) {
+            
+            sandwich = new BethlehemFauxSpecial(ingredientFactory);
+            sandwich.setName("Bethlehem Style Faux Special");
         }
         return sandwich;
     }
