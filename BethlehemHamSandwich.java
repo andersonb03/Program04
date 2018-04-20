@@ -7,7 +7,11 @@ public class BethlehemHamSandwich extends Sandwich {
     public BethlehemHamSandwich(SandwichIngredientFactory ingredientFactory) {
 	this.ingredientFactory = ingredientFactory;
     }
-    
+    public double getCost() {
+        return 1.50;
+    }
+
+
     void makeSandwich() {
         System.out.println("Making " + name);
 	bread = ingredientFactory.createBread();

@@ -1,5 +1,6 @@
 public class BethlehemSandwichIngredientFactory implements SandwichIngredientFactory {
     String item;
+    double price=0.0;
 
     public BethlehemSandwichIngredientFactory(String item){
         this.item = item;
@@ -7,7 +8,7 @@ public class BethlehemSandwichIngredientFactory implements SandwichIngredientFac
     
     public Bread createBread() {
 	if(item.equals("hamburger"))
-            return new Bun();
+	        return new Bun();
         else if(item.equals("ham"))
             return new Bun();
         else if(item.equals("chicken"))
@@ -39,4 +40,15 @@ public class BethlehemSandwichIngredientFactory implements SandwichIngredientFac
             condiments = new Condiment[] {new Mustard()};
         return condiments;
     }
+
+
+
+
+
+
+
+
 }
+
+
+

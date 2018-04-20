@@ -1,5 +1,6 @@
 public abstract class Sandwich {
     String name;
+
     
     abstract void makeSandwich();
     
@@ -10,6 +11,8 @@ public abstract class Sandwich {
     String getName() {
         return name;
     }
+
+    public abstract double getCost();
 
 
 }
