@@ -9,7 +9,21 @@ public class BethlehemChickenSandwich extends Sandwich {
     }
 
     public double getCost() {
-        return 2.50;
+        double totalCost = 2.5;
+        if (bread != null) {
+            totalCost += bread.getCost();
+        }
+        if (topping != null) {
+            for (int i = 0; i < topping.length; i++) {
+                totalCost += topping[i].getCost();
+            }
+        }
+        if (condiment != null) {
+            for (int i = 0; i < condiment.length; i++) {
+                totalCost += condiment[i].getCost();
+            }
+        }
+        return totalCost;
     }
 
 

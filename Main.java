@@ -19,7 +19,9 @@ public class Main {
         Sandwich sandwich7 = eDeli.orderSandwich("hamburger");
         Sandwich sandwich8 = eDeli.orderSandwich("ham");
         Sandwich sandwich9 = eDeli.orderSandwich("chicken");
+        
+        //Custom sandwiches
+        Sandwich andersonSandwich = bDeli.orderSandwich("andersonspecial");
 
-        System.out.println("Dr. Schaper ordered a: \n" + sandwich1.toString() + ", " + "$" + sandwich1.getCost() + sandwich2 + ", " + sandwich3 + ", " + sandwich4 + ", " + sandwich5 + ", " + sandwich6 + ", " + sandwich7 + ", " + sandwich8 + ", " + sandwich9);
-    }
+        System.out.println("Dr. Schaper ordered a: \n" + sandwich1 + "$" + sandwich1.getCost() + "\n" + sandwich2 + "$" + sandwich2.getCost() + "\n" + sandwich3 + "$" + sandwich3.getCost() + "\n" + sandwich4 + "$" + sandwich4.getCost() + "\n" + sandwich5 + "$" + sandwich5.getCost() + "\n" + sandwich6 + "$" + sandwich6.getCost() + "\n" + sandwich7 + "$" + sandwich7.getCost() + "\n" + sandwich8 + "$" + sandwich8.getCost() + "\n" + sandwich9 + "$" + sandwich9.getCost() + "\n" + andersonSandwich + "$" + andersonSandwich.getCost());}
 }

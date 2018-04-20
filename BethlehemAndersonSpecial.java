@@ -1,14 +1,14 @@
-public class AllentownChickenSandwich extends Sandwich {
+public class BethlehemAndersonSpecial extends Sandwich {
     SandwichIngredientFactory ingredientFactory;
     Bread bread;
     Topping[] topping;
     Condiment[] condiment;
 
-    public AllentownChickenSandwich(SandwichIngredientFactory ingredientFactory) {
+    public BethlehemAndersonSpecial(SandwichIngredientFactory ingredientFactory) {
 	this.ingredientFactory = ingredientFactory;
     }
     public double getCost() {
-        double totalCost = 2.5;
+        double totalCost = 2.00;
         if (bread != null) {
             totalCost += bread.getCost();
         }
@@ -24,8 +24,7 @@ public class AllentownChickenSandwich extends Sandwich {
         }
         return totalCost;
     }
-
-
+    
     void makeSandwich() {
         System.out.println("Making " + name);
 	bread = ingredientFactory.createBread();

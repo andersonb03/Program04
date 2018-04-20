@@ -1,6 +1,5 @@
 public class BethlehemSandwichIngredientFactory implements SandwichIngredientFactory {
     String item;
-    double price=0.0;
 
     public BethlehemSandwichIngredientFactory(String item){
         this.item = item;
@@ -13,6 +12,8 @@ public class BethlehemSandwichIngredientFactory implements SandwichIngredientFac
             return new Bun();
         else if(item.equals("chicken"))
             return new WheatWrap();
+        else if(item.equals("andersonspecial"))
+            return new Bun();
         return null;
     }
     
@@ -26,6 +27,8 @@ public class BethlehemSandwichIngredientFactory implements SandwichIngredientFac
             toppings = new Topping[] {new Lettuce(), new Tomato()};
         else if(item.equals("chicken"))
             toppings = new Topping[] {new Cheese(), new Lettuce(), new Tomato()};
+        else if(item.equals("andersonspecial"))
+            toppings = new Topping[] {new Cheese(), new Lettuce(), new Tomato(), new Onion(), new Sprouts()};
         return toppings;
     }
     
@@ -38,16 +41,10 @@ public class BethlehemSandwichIngredientFactory implements SandwichIngredientFac
             condiments = new Condiment[] {new Mayonnaise()};
         else if(item.equals("chicken"))
             condiments = new Condiment[] {new Mustard()};
+        else if(item.equals("andersonspecial"))
+            condiments = new Condiment[] {new Mustard(), new Mayonnaise(), new Ketchup()};
         return condiments;
     }
-
-
-
-
-
-
-
-
 }
 
 
