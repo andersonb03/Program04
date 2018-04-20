@@ -20,6 +20,6 @@ public class Main {
         Sandwich sandwich8 = eDeli.orderSandwich("ham");
         Sandwich sandwich9 = eDeli.orderSandwich("chicken");
 
-        System.out.println("Dr. Schaper ordered a " + sandwich1 + ", " + sandwich2 + ", " + sandwich3 + ", " + sandwich4 + ", " + sandwich5 + ", " + sandwich6 + ", " + sandwich7 + ", " + sandwich8 + ", " + sandwich9);
+        System.out.println("Dr. Schaper ordered a: \n" + sandwich1.toString() + ", " + sandwich2 + ", " + sandwich3 + ", " + sandwich4 + ", " + sandwich5 + ", " + sandwich6 + ", " + sandwich7 + ", " + sandwich8 + ", " + sandwich9);
     }
 }

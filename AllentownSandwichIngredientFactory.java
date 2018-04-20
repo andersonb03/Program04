@@ -11,26 +11,26 @@ public class AllentownSandwichIngredientFactory implements SandwichIngredientFac
     
     public Topping[] createTopping() {
 
-        Topping[] toppings = null;
+        Topping[] topping = null;
         //Topping toppings[] = { new Sprouts(), new Lettuce(), new Cheese(), new Tomato(), new Onion() };
 
         if(item.equals("hamburger"))
-            toppings = new Topping[] {new Lettuce(), new Cheese(), new Tomato()};
+            topping = new Topping[] {new Lettuce(), new Cheese(), new Tomato()};
         else if(item.equals("ham"))
-            toppings = new Topping[] {new Cheese(), new Tomato(), new Onion()};
+            topping = new Topping[] {new Cheese(), new Tomato(), new Onion()};
         else if(item.equals("chicken"))
-            toppings = new Topping[] {new Lettuce()};
-        return toppings;
+            topping = new Topping[] {new Lettuce()};
+        return topping;
     }
     
     public Condiment[] createCondiment() {
-        Condiment[] condiments = null;
+        Condiment[] condiment = null;
         if(item.equals("hamburger"))
-            condiments = new Condiment[] {new Mayonnaise()};
+            condiment = new Condiment[] {new Mayonnaise()};
         else if(item.equals("ham"))
-            condiments = new Condiment[] {};
+            condiment = new Condiment[] {};
         else if(item.equals("chicken"))
-            condiments = new Condiment[] {new Mayonnaise()};
-        return condiments;
+            condiment = new Condiment[] {new Mayonnaise()};
+        return condiment;
     }
 }
