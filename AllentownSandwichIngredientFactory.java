@@ -10,6 +10,7 @@ public class AllentownSandwichIngredientFactory implements SandwichIngredientFac
     }
     
     public Topping[] createTopping() {
+
         Topping[] toppings = null;
         //Topping toppings[] = { new Sprouts(), new Lettuce(), new Cheese(), new Tomato(), new Onion() };
 

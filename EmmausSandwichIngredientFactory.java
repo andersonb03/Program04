@@ -17,6 +17,7 @@ public class EmmausSandwichIngredientFactory implements SandwichIngredientFactor
     
     public Topping[] createTopping() {
         Topping[] toppings = null;
+        
         //Topping toppings[] = { new Sprouts(), new Lettuce(), new Cheese(), new Tomato(), new Onion() };
 
         if(item.equals("hamburger"))
