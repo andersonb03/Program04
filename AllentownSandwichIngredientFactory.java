@@ -6,7 +6,9 @@ public class AllentownSandwichIngredientFactory implements SandwichIngredientFac
     }
     
     public Bread createBread() {
-        return new Bun();
+        if(item.equals("nischalspecial"))
+            return new Bun();
+        return null;
     }
     
     public Topping[] createTopping() {
@@ -20,6 +22,8 @@ public class AllentownSandwichIngredientFactory implements SandwichIngredientFac
             topping = new Topping[] {new Cheese(), new Tomato(), new Onion()};
         else if(item.equals("chicken"))
             topping = new Topping[] {new Lettuce()};
+        else if(item.equals("nischalspecial"))
+            topping = new Topping[] {new Cheese(),new Lettuce(),new Tomato(), new Onion()};
         return topping;
     }
     
@@ -31,6 +35,8 @@ public class AllentownSandwichIngredientFactory implements SandwichIngredientFac
             condiment = new Condiment[] {};
         else if(item.equals("chicken"))
             condiment = new Condiment[] {new Mayonnaise()};
+        else if(item.equals("nischalspecial"))
+            condiment = new Condiment[] {new Mustard(),new Mayonnaise(), new Ketchup()};
         return condiment;
     }
 }
